@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+<h1 style="color:#ebaf60">Hello {{ user.username }}</h1>
+
+<a href="{% url 'password_change' %}" class="btn btn-lg">Password change</a>
+{% endblock%}
