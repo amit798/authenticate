@@ -1,7 +1,7 @@
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
-from phonenumber_field.modelfields import PhoneNumberField
+#from phonenumber_field.modelfields import PhoneNumberField
 from django.forms.utils import ValidationError
 class UserRegistrationForm(UserCreationForm):
     email=forms.EmailField(max_length=200,help_text='Required,Please enter a valid email address')
